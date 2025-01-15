@@ -6,7 +6,7 @@ import Intro from './Components/intro/Intro'
 import Navbar from './Components/Navbar/Navbar';
 // import Portfolio from './Components/Portfolio/Portfolio';
 import Services from './Components/Services/Services';
-import Testimonial from './Components/Testimonial/Testimonial';
+import Projects from './Components/Projects/Projects';
 import Works from './Components/Works/Works';
 import {themeContext} from './Context/Context';
 import {useContext} from 'react';
@@ -28,7 +28,7 @@ function App() {
       {/* <Experience />    */}
       <Works />
       {/* <Portfolio />   */}
-      <Testimonial />
+      <Projects />
       <Contact />
       <Footer />
     </div>

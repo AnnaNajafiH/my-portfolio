@@ -1,5 +1,5 @@
 import React from 'react';
-import './Testimonial.css';
+import './Projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/profile1.jpg';
 import profilePic2 from '../../img/profile2.jpg';
