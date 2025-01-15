@@ -45,11 +45,13 @@ const transition = {duration: 2, type:'spring'};
                 <img src={Vector1} alt="vector1" />
                 <img src={Vector2} alt="vector2" />
                 <img src={Anna} alt="Anna" style={{ width: '300px', height: '400px', borderRadius: '60px' }} />
-                <motion.img
+                <div className='glassesimoji'>
+                    <motion.img
                 initial={{left: '-36%'}}
                 whileInView={{left: '-23%'}}
                 transition={transition}
                 src={Glassesimoji} alt="glassesimoji" />
+                </div>
 
                 <motion.div 
                 initial={{top:'14rem', left: '12rem'}}

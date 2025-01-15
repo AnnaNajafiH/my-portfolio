@@ -130,3 +130,70 @@
     left: 10rem !important;
  }
 }
+
+
+@media screen and (max-width:768px) {
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 4rem;
+        padding: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        height: 100vh;
+    }
+    .i-left, .i-right{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .i-name > :nth-child(1),
+  .i-name > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+   .i-name > :nth-child(3),
+  .i-name > :nth-child(4) {
+    font-size: 12px;
+  }
+    .i-button {
+    width: 10rem;
+    height: 2.5rem;
+  }
+    .i-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .i-icons > * {
+    transform: scale(0.8);
+  }
+
+  /* Rechte Seite */
+  .i-right  {
+    transform: scale(0.6);
+    left: -4rem;
+    
+  }
+
+  .floating-div {
+    transform: scale(0.9);
+  }
+
+  .floating-div:nth-child(1) {
+    top: 18rem !important;
+    left: 3rem !important;
+  }
+
+  .floating-div:nth-child(2) {
+    top: 22rem !important;
+    left: 1rem !important;
+  }
+  .Glassesimoji {
+    top: 19rem !important;
+    left: 10rem !important;
+  }
+
+}
+
+
+
