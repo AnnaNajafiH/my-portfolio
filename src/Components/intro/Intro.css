@@ -148,7 +148,7 @@
         text-align: center;
         width: 100%;
     }
-    .i-name > :nth-child(1),
+  .i-name > :nth-child(1),
   .i-name > :nth-child(2) {
     font-size: 2.5rem;
   }
@@ -181,15 +181,6 @@
     transform: scale(0.9);
   }
 
-  /* .floating-div:nth-child(1) {
-    top: 18rem !important;
-    left: 3rem !important;
-  }
-
-  .floating-div:nth-child(2) {
-    top: 22rem !important;
-    left: 1rem !important;
-  } */
   .Glassesimoji {
     top: 19rem !important;
     left: 10rem !important;

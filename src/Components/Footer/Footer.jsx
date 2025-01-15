@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import Wave from '../../img/wave.png';  
-import { UilTwitter, UilLinkedin, UilGithub } from '@iconscout/react-unicons';
+import { UilEnvelope, UilLinkedin, UilGithub } from '@iconscout/react-unicons';
 
 
 
@@ -10,11 +10,13 @@ function Footer() {
     <div className="footer">
         <img src={Wave} alt="" style={{width:'100%'}}/>
         <div className="f-content">
-            <span>nnh.chem@gmail.com</span>
+            <span>nahid.najafi.h@gmail.com</span>
             <div className="f-icons">
-                <UilTwitter color='white' size='3rem'/>
-                <UilLinkedin color='white' size='3rem'/>
-                <UilGithub color='white' size='3rem'/>
+                {/* <a href="mailto:nahid.najafi.h@gmail.com">
+            <UilEnvelope color="white" size="3rem" />
+              </a> */}
+                <a href="https://www.linkedin.com/in/nahid-najafi-hajivar"><UilLinkedin color='white' size='3rem'/></a>
+                <a href="https://github.com/AnnaNajafiH"><UilGithub color='white' size='3rem'/></a>
             </div>
         </div>
     </div>

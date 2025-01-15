@@ -1,14 +1,16 @@
-.w-left{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 50vh;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
+.w-left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+}
+
 
 .c-right {
     display: flex;
@@ -44,13 +46,30 @@ textarea{
 }
 
 @media screen and (max-width: 480px) {
+
     .contact-form{
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
         margin-bottom: 6rem;
+    }
+    .w-left{
+        margin-top: 2rem;
+        margin-bottom: 0;
     }
     .c-right .user{
         width: 15rem;
     }
-    
+    .c-button {
+    width: 9rem !important;
+    height: 2rem !important;
+  }
+  /* .awesome>:nth-child(1),
+  .awesome>:nth-child(2){
+    color: var(--black);
+    font-size: 2.5rem; 
+}
+
+.awesome>:nth-child(3){
+    font-size: 12px;
+} */
 }

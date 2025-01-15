@@ -39,6 +39,7 @@ function Contact() {
             <div className="awesome">
                 <span style={{color:darkMode?'white': ''}}>Get in touch</span>
                 <span>Contact</span>
+                <span>Got an idea in mind? Let’s connect and make it happen!</span>
             </div>
             <div className="blur s-blur1" style={{background: '#ABF1FF94'}} ></div>
         </div>
@@ -48,7 +49,7 @@ function Contact() {
                     <input type='text' name='user-name' className='user' placeholder='Name' />
                     <input type='email' name='user-email' className='user' placeholder='Email' />
                     <textarea name='message' className='user' placeholder='Message'/>
-                    <input type='submit' value='Send' className='button' />
+                    <input type='submit' value='Send' className='button c-button' />
                     <span>{done && "thanks for contacting me!"}</span>
 
                     <div className="blur c-blur1"

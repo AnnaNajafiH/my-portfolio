@@ -18,7 +18,8 @@ function Services() {
     <div className="services" id='Services'> 
     {/* //id='Services' is used to scroll to this section */}
         {/* left side */}
-        <div className="awesome">
+        <div className='s-left'>
+            <div className="awesome">
             <span style={{color:darkMode?'white': ''}}>My Professional 
 </span>
             <span>Services</span>
@@ -32,6 +33,7 @@ function Services() {
 
                 <div className="blur s-blur1" style={{background:'#ABF1FF94'}}></div>
         </div>
+        </div>
 
         {/* right side */}
         <div className="cards"> 
@@ -43,7 +45,7 @@ function Services() {
                 <Card
                emoji= {HeartEmoji}
                 heading="Backend Development"
-                detail={"Node.js, Express.js,  REST APIs, MongoDB, SQL"}
+                detail={"Node.js, Express.js,  REST APIs, MongoDB, SQL, PHP"}
                 />
             </motion.div>
             <motion.div

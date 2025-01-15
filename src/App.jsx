@@ -4,7 +4,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Intro from './Components/intro/Intro'
 import Navbar from './Components/Navbar/Navbar';
-import Portfolio from './Components/Portfolio/Portfolio';
+// import Portfolio from './Components/Portfolio/Portfolio';
 import Services from './Components/Services/Services';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Works from './Components/Works/Works';
@@ -27,7 +27,7 @@ function App() {
       <Services /> 
       {/* <Experience />    */}
       <Works />
-      <Portfolio />  
+      {/* <Portfolio />   */}
       <Testimonial />
       <Contact />
       <Footer />

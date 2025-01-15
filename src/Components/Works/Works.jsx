@@ -125,7 +125,7 @@ function Works() {
 
         <button className="button s-button">Hire Me</button>
 
-        <div className="blur s-blur1" style={{ background: '#ABF1FF94' }}></div>
+        <div className="blur w-blur1" style={{ background: '#ABF1FF94' }}></div>
       </div>
       {/* right side */}
       <div className="w-right">

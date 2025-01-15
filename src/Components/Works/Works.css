@@ -168,10 +168,32 @@
 
 @media screen and (max-width: 480px) {
  .works{
-    flex-direction: column;
-    
-    height: 38rem;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        padding: 2rem;
+        height: 100vh;
  }
+     .w-left, .w-right{
+        align-items: center;
+        text-align: center;
+    }
+
+    .w-left > :nth-child(1),
+  .w-left > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+   .w-left > :nth-child(3) {
+    font-size: 12px;
+  }
+
+    .w-button {
+    width: 9rem !important;
+    height: 2rem !important;
+    margin-left: 6rem;
+  }
+
  .w-right{
         transform: scale(0.8);
     }

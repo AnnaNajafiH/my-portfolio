@@ -4,33 +4,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/profile1.jpg';
 import profilePic2 from '../../img/profile2.jpg';
 import profilePic3 from '../../img/profile3.jpg';
-import profilePic4 from '../../img/profile4.jpg';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
-function Testimonial() {
-    const clients= [
-        {img:profilePic1,
-            review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque."
-        },
-        {img:profilePic2,
-            review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque."
-        },
-        {img:profilePic3,
-            review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque."
-        },
-        {img:profilePic4,
-            review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque."
-        },
-    ]
-
+function Projects() {
+  const projects = [
+    {
+      id: 1,
+      title: 'Project 1',
+      image: profilePic1,
+      link: 'https://github.com/', 
+    },
+    {
+      id: 2,
+      title: 'Project 2',
+      image: profilePic2, 
+      link: 'https://github.com/',
+    },
+    {
+      id: 3,
+      title: 'Project 3',
+      image: profilePic3, 
+      link: 'https://github.com/', 
+    },
+    
+  ];
   return (
-    <div className="t-wrapper" id='Testimonials'>
+    <div className="t-wrapper" id='Projects'>
         <div className="t-heading">
-            <span>Client always get</span>
-            <span>Exceptional Work</span>
-            <span>from me ...</span>
+            <span>Portfolio</span>
+            <span>Swipe to See My Projects</span>
+            <span>Explore the details by clicking the link.</span>
         
         <div className="blur t-blur1" style={{background:'var(--purple)'}}></div>
         <div className="blur t-blur2" style={{background:'skyblue'}}></div>
@@ -42,12 +47,12 @@ function Testimonial() {
         slidesPerView={1}
         pagination={{ clickable: true }}
         >
-            {clients.map((client, index)=>{
+            {projects.map((project)=>{
                 return (
-                    <SwiperSlide key={index}>
-                        <div className="testimonial">
-                            <img src={client.img} alt="profile" />
-                            <span>{client.review}</span>
+                    <SwiperSlide key={project.id}>
+                        <div className="project">
+                            <img src={project.image} alt="profile" />
+                            <a href="project.link" className='project-link'><span>Click here to see Project</span></a>
                         </div>
                     </SwiperSlide>
                 )
@@ -57,4 +62,4 @@ function Testimonial() {
   )
 }
 
-export default Testimonial
+export default Projects;
