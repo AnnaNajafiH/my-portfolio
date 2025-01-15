@@ -1,0 +1,186 @@
+.works{
+    padding:0 3rem 0 3rem;
+    display: flex;
+    height: 60vh;
+    margin-top: 5rem;
+}
+
+
+
+.w-left{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+}
+
+.w-left>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.w-left>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.w-left>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.w-right {
+    position: relative;
+    flex: 1;
+
+}
+
+.w-mainCircle {
+    left: 9rem;
+    position:relative;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: #1A89E2;
+}
+
+.w-mainCircle>* {
+    position: absolute;
+}
+
+/* javascript */
+.w-mainCircle > :nth-child(1) {
+    left: -1.50rem;
+    top: 11rem;
+}
+/* typescript */
+.w-mainCircle > :nth-child(2) {
+    left:8rem;
+    top: 16rem;
+}
+/* react */
+.w-mainCircle > :nth-child(3) {
+    left: 3rem;
+    top: -2rem;
+}
+/* node */
+.w-mainCircle > :nth-child(4) {
+    left: 16rem;
+    top:9.5rem;
+}
+/* express */
+.w-mainCircle > :nth-child(5) {
+    left: -1.1rem;
+    top: 1rem;
+}
+/* mysql */
+.w-mainCircle > :nth-child(6) {
+    left: 13rem;
+    top: -0.5rem;
+}
+/* mongoDB */
+.w-mainCircle > :nth-child(7) {
+    left: 8rem;
+    top: -3rem;
+}
+/* PHP */
+.w-mainCircle > :nth-child(8) {
+    left: 2.4rem;
+    top: 15rem;
+}
+/* tailwind */
+.w-mainCircle > :nth-child(9) {
+    left: 13rem;
+    top: 14rem;
+}
+/* Bootstrap */
+.w-mainCircle > :nth-child(10) {
+    left: 16rem;
+    top:4rem;
+}
+/* github */
+.w-mainCircle > :nth-child(11) {
+    left: -2.6rem;
+    top:5.8rem;
+}
+
+
+/* .w-secCircle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--smboxShadow);
+    background: white;
+}
+
+.w-secCircle > img {
+    transform: scale(0.5);
+} */
+
+
+/* Make sure to adjust the size and circular shape of the image container */
+.w-secCircle {
+  width: 60px;   /* Set the width of the circle (you can adjust this value) */
+  height: 60px;  /* Set the height of the circle */
+  display: flex;
+  justify-content: center;  /* Center the image horizontally */
+  align-items: center;      /* Center the image vertically */
+  border-radius: 50%;       /* Make the div circular */
+  overflow: hidden;         /* Ensure the image is clipped to the circle shape */
+  margin: 10px;             /* Optional: space out the icons */
+}
+
+/* Style for the images inside the circle */
+.w-secCircle img {
+  width: 100%;   /* Ensure the image fills the div */
+  height: 100%;  /* Ensure the image fills the div */
+  object-fit: cover;  /* Ensures the image maintains aspect ratio and fills the container */
+}
+
+.w-backCircle{
+    position: absolute;
+    height:13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index:-1;
+}
+
+.blueCircle{
+    background: #194988;
+    left: 18rem;
+    top: 0rem;
+}
+
+.yellowCircle{
+    background: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+ .works{
+    flex-direction: column;
+    
+    height: 38rem;
+ }
+ .w-right{
+        transform: scale(0.8);
+    }
+    .w-mainCircle{
+        left: 0;
+    }
+    .w-backCircle{
+        transform: scale(0.8);
+        left: 10rem;
+    }
+}
+
