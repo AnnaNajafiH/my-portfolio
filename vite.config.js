@@ -9,7 +9,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'portfolio', // Replace with your preferred directory name
+    outDir: 'dist', // Replace with your preferred directory name
   },
 });
 
