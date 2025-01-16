@@ -63,11 +63,14 @@
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
+/* Dark Mode Hamburger */
+.dark-mode .hamburger div {
+    background-color: white;
+}
 
 /* Active menu item stays orange */
 .active-link {
   color: var(--orange);
-  font-weight: bold;
   border-bottom: 2px solid var(--orange); /* Optional underline */
 }
 
@@ -103,6 +106,18 @@
     .hamburger {
         display: flex;
     }
+  
+    /* Light Mode Hamburger */
+.hamburger-light div {
+  background-color: black;
+}
+
+/* Dark Mode Hamburger */
+.hamburger-dark div {
+  background-color: white;
+}
+
+
     .n-button{
      display: none;
  }

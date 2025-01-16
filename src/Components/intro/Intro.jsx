@@ -12,6 +12,7 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import {motion} from 'framer-motion';   // npm i framer-motion: for animation
+import {Link} from 'react-scroll';
 
 
 
@@ -27,12 +28,16 @@ const transition = {duration: 2, type:'spring'};
     <div className='intro'>
         <div className='i-left'>
             <div className="i-name">
-                <span style={{color:darkMode?'white': ''}}>Hey! I Am</span>
+                <span style={{color:darkMode?'white': ''}}>Hi! I Am</span>
                 <span>Nahid Najafi</span>
-                <span>A Full-Stack Web Developer 
+                <span>A Full-Stack Web & App Developer 
                     </span>
                     <span>passionate about creating interactive, intuitive and user-friendly web application experiences.</span>
-                <button className="button  i-button">Hire Me</button>
+            <Link spy={true} smooth={true} to='Contact' >
+            <button className="button n-button i-button-mobile">
+                Contact
+            </button>
+            </Link>
 
             <div className="i-icons">
                 <a href='https://github.com/AnnaNajafiH'><img src={Github} alt="github" /></a>
@@ -44,7 +49,7 @@ const transition = {duration: 2, type:'spring'};
         <div className="i-right"> 
                 <img src={Vector1} alt="vector1" />
                 <img src={Vector2} alt="vector2" />
-                <img src={Anna} alt="Anna" style={{ width: '300px', height: '400px', borderRadius: '60px' }} />
+                <img src={Anna} alt="Anna" style={{ width: '300px', height: '410px', borderRadius: '60px' }} />
                 <div className='glassesimoji'>
                     <motion.img
                 initial={{left: '-36%'}}
@@ -60,7 +65,7 @@ const transition = {duration: 2, type:'spring'};
                 style={{top:'3%', left:'68%' }}
                 className='floating-div'
                 >
-                    <FloatingDiv image={Crown} txt1='Backend' txt2='Developer'/>
+                <FloatingDiv image={Crown} txt1='Backend' txt2='Developer'/>
                 </motion.div>
 
                 <motion.div

@@ -137,6 +137,7 @@
   border-radius: 50%;       /* Make the div circular */
   overflow: hidden;         /* Ensure the image is clipped to the circle shape */
   margin: 10px;             /* Optional: space out the icons */
+  box-shadow: var(--smboxShadow);
 }
 
 /* Style for the images inside the circle */
@@ -205,7 +206,7 @@
   }
 
  .w-right{
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     .w-mainCircle{
         left: 0;

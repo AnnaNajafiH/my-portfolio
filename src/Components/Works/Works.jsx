@@ -71,7 +71,7 @@ function Works() {
         </motion.div>
 
         {/* background circle */}
-        <div className="w-backCircle blueCircle"></div>
+        {/* <div className="w-backCircle blueCircle"></div> */}
         <div className="w-backCircle yellowCircle"></div>
       </div>
     </div>

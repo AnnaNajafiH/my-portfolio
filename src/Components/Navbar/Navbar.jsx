@@ -10,6 +10,7 @@ const [menuOpen, setMenuOpen] = useState(false);
 const toggleMenu = () => {setMenuOpen(!menuOpen);};
 const [activeItem, setActiveItem] = useState('Home'); // Track active menu item
 
+
   const handleSetActive = (to) => {
     setActiveItem(to);  // Set the active menu item
     toggleMenu();       // Close the menu (for mobile)
