@@ -8,6 +8,13 @@ function Navbar() {
      
 const [menuOpen, setMenuOpen] = useState(false);
 const toggleMenu = () => {setMenuOpen(!menuOpen);};
+const [activeItem, setActiveItem] = useState('Home'); // Track active menu item
+
+  const handleSetActive = (to) => {
+    setActiveItem(to);  // Set the active menu item
+    toggleMenu();       // Close the menu (for mobile)
+  };
+
 
 
   return (
@@ -19,9 +26,21 @@ const toggleMenu = () => {setMenuOpen(!menuOpen);};
         <div className="n-right">
             <div className={`n-list ${menuOpen ? 'active' : ''}`}>
                 <ul>
-                    <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
-                    <li onClick={toggleMenu}>Home</li>
-                    </Link>
+             <Link
+              spy={true}
+              to='Navbar'
+              smooth={true}
+              activeClass='activeClass'
+              onSetActive={() => setActiveItem('Home')}   //this is a built-in function that sets the active menu item
+            >
+              <li
+                onClick={() => handleSetActive('Home')}
+                className={activeItem === 'Home' ? 'active-link' : ''}
+              >
+                Home
+              </li>
+            </Link>     
+
                     <Link spy={true} to='Services' smooth={true} activeClass="activeClass">
                     <li onClick={toggleMenu}>Services</li>
                     </Link>
@@ -29,8 +48,8 @@ const toggleMenu = () => {setMenuOpen(!menuOpen);};
                     <li onClick={toggleMenu}>Skills</li>
                     </Link>
 
-                    <Link spy={true} to='Portfolio' smooth={true} activeClass="activeClass">
-                    <li onClick={toggleMenu}>Portfolio</li>
+                    <Link spy={true} to='Projects' smooth={true} activeClass="activeClass">
+                    <li onClick={toggleMenu}>Projects</li>
                     </Link>
                 </ul>
             </div>
