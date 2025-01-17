@@ -2,9 +2,8 @@
     padding:0 3rem 0 3rem;
     display: flex;
     height: 60vh;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
-
 
 
 .w-left{
@@ -26,7 +25,7 @@
 }
 .w-left>:nth-child(3){
     color: var(--gray);
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -45,7 +44,7 @@
     border-radius: 100%;
     box-shadow: var(--smboxShadow);
     top: 2rem;
-    /* background: #1A89E2; */
+    /* border: #1A89E2 1px solid; */
 }
 
 .w-mainCircle>* {
@@ -109,43 +108,25 @@
 }
 
 
-/* .w-secCircle{
-    width: 6rem;
-    height: 6rem;
+.w-secCircle{
+    height: 60px;
+     width: 60px; 
     position: absolute;
-    border-radius: 100%;
-    border: 5px solid #ebebeb;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: var(--smboxShadow);
     background: white;
+    margin: 10px; 
+    overflow: hidden; 
 }
-
-.w-secCircle > img {
-    transform: scale(0.5);
-} */
-
-
-/* Make sure to adjust the size and circular shape of the image container */
-.w-secCircle {
-  width: 60px;   /* Set the width of the circle (you can adjust this value) */
-  height: 60px;  /* Set the height of the circle */
-  display: flex;
-  justify-content: center;  /* Center the image horizontally */
-  align-items: center;      /* Center the image vertically */
-  border-radius: 50%;       /* Make the div circular */
-  overflow: hidden;         /* Ensure the image is clipped to the circle shape */
-  margin: 10px;             /* Optional: space out the icons */
-  box-shadow: var(--smboxShadow);
-}
-
-/* Style for the images inside the circle */
 .w-secCircle img {
   width: 100%;   
   height: 100%;  
   object-fit: cover;  
 }
+
 
 .w-backCircle{
     position: absolute;
@@ -154,22 +135,6 @@
     border-radius: 100%;
     z-index:-1;
 }
-
-.blueCircle{
-    background: #1a89e2;
-    left: 13.9rem;
-    top: 6.6rem;
-    z-index: 2000;
-    width: 150px;
-    height: 150px;
-}
-
-/* .yellowCircle{
-    background: #F5C32C;
-    left: 18rem;
-    top: 8rem;
-} */
-
 .yellowCircle{
     background: #F5C32C;
     left: 12rem;
@@ -177,26 +142,52 @@
     z-index: 1000;
 }
 
+/* .blueCircle{
+    background: #1a89e2;
+    left: 13.9rem;
+    top: 6.6rem;
+    z-index: 2000;
+    width: 150px;
+    height: 150px;
+} */
+
+/* .yellowCircle{
+    background: #F5C32C;
+    left: 18rem;
+    top: 8rem;
+} */
+
+
+
 @media screen and (max-width: 480px) {
  .works{
         flex-direction: column;
         align-items: center;
         height: auto;
         gap: 1rem;
-        padding: 2rem;
+        padding: 1rem 2rem 0 2rem;
         height: 100vh;
+        margin-top: 0;
  }
-     .w-left, .w-right{
+     .w-left{
         align-items: center;
         text-align: center;
+        justify-content: center;
+        display: flex;
+        flex: 0.5rem;
+    }
+     .w-right{
+        align-items: center;
+        text-align: center;
+
     }
 
-    .w-left > :nth-child(1),
+  .w-left > :nth-child(1),
   .w-left > :nth-child(2) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
    .w-left > :nth-child(3) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
     .w-button {

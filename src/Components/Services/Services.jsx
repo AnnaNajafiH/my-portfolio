@@ -5,34 +5,51 @@ import Glasses from '../../img/glasses.png';
 import Humble from '../../img/humble.png';
 import Card from '../Card/Card';
 import Resume from './resume.pdf';
-import { useContext } from 'react';
+import {useState, useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import {motion} from 'framer-motion';   
 
 function Services() {
     const transition = {duration: 1, type:'spring'}; //animation
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
 
-      const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-  return (
-    <div className="services" id='Services'> 
-    {/* //id='Services' is used to scroll to this section */}
+    const [showConfirm, setShowConfirm] = useState(false);
+
+    const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = Resume;
+    link.download = 'Resume.pdf';
+    link.click();
+    setShowConfirm(false); // Hide confirmation after download
+  };
+
+    return (
+    <div className="services" id='Services'>  {/* //id='Services' is used to scroll to this section */}
+    
         {/* left side */}
         <div className='s-left'>
-            <div className="awesome">
-            <span style={{color:darkMode?'white': ''}}>My Professional 
-</span>
-            <span>Services</span>
-            <span> I offer services that help you achieve your digital goals with precision and care. 
-            </span>
+            <div className="s-name">
+                <span style={{color:darkMode?'white': ''}}>My Professional </span>
+                <span>Services</span>
+                <span> I offer services that help you achieve your digital goals with precision and care. </span>
                 
 
-                <a href={Resume} download>
-                <button className="button s-button">Download CV</button>
-                </a>
+                <button className="button s-button" onClick={() => setShowConfirm(!showConfirm)}>
+            Download CV
+          </button>
+                    {/* Custom Confirmation Box */}
+          {showConfirm && (
+            <div className="confirm-box">
+              <p>Do you want to download the resume?</p>
+              <button className="button confirm-yes" onClick={handleDownload}>Yes</button>
+              <button className="button confirm-no" onClick={() => setShowConfirm(false)}>No</button>
+            </div>
+          )}
+
 
                 <div className="blur s-blur1" style={{background:'#ABF1FF94'}}></div>
-        </div>
+            </div>
         </div>
 
         {/* right side */}

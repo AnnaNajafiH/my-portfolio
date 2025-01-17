@@ -41,7 +41,8 @@ function Projects() {
         <div className="blur t-blur2" style={{background:'skyblue'}}></div>
         </div>
 
-        {/* slider */}
+    
+          {/* slider */}
         <Swiper
         modules={[Pagination]}
         slidesPerView={1}

@@ -22,7 +22,7 @@
 }
 
 .c-name>:nth-child(2){
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: var(--orange);
 }
@@ -73,6 +73,21 @@ textarea{
 
 }
 
+/* Red border for inputs with errors */
+.input-error {
+  border: 2px solid red;
+}
+
+/* Error message styling */
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+
 @media screen and (max-width: 480px) {
 
     .contact-form{
@@ -101,7 +116,7 @@ textarea{
   }
   .c-name > :nth-child(1),
   .c-name > :nth-child(2) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
    .c-name > :nth-child(3){
     font-size: 14px;

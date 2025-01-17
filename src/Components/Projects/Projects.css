@@ -6,8 +6,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 7rem;
+    margin-bottom: 7rem;
     flex-direction: column;
-    gap:2rem;
+    gap:3rem;
     position: relative;
 }
 
@@ -18,8 +19,9 @@
     flex-direction: column;
 }
 .t-heading>*{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .t-heading span:nth-child(2){
@@ -27,7 +29,7 @@
 }
 .t-heading span:nth-child(3){
     color: var(--gray);
-    font-size: 1rem;
+    font-size: 17px;
     font-weight: 200
 }
 
@@ -105,19 +107,18 @@
     .t-wrapper{
         padding: 0;
     }
-    .t-heading>*{
-        font-size: 1.5rem;
+    .t-heading> :nth-child(1), 
+    .t-heading> :nth-child(2){
+        font-size: 2.rem;
+    }
+    .t-heading span:nth-child(3){
+        font-size: 14px;
     }
     .project{
         width: 20rem;
         height: 10rem;
     }
     .project .project-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     font-size: 0.7rem;
     font-weight: bold;
     text-decoration: none;
