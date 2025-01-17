@@ -112,7 +112,7 @@ textarea{
     }
     .c-button {
     width: 9rem !important;
-    height: 2rem !important;
+    padding-bottom: 2rem;
   }
   .c-name > :nth-child(1),
   .c-name > :nth-child(2) {

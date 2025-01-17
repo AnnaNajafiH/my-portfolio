@@ -41,7 +41,7 @@ function Services() {
                     {/* Custom Confirmation Box */}
           {showConfirm && (
             <div className="confirm-box">
-              <p>Do you want to download the resume?</p>
+              <p style={{ color: darkMode ? 'black !important' : 'white !important' }}>Do you want to download my resume?</p>
               <button className="button confirm-yes" onClick={handleDownload}>Yes</button>
               <button className="button confirm-no" onClick={() => setShowConfirm(false)}>No</button>
             </div>

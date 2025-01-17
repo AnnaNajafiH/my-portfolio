@@ -67,7 +67,6 @@
 .confirm-box {
   margin-top: 0.5rem;
   padding: 0.8rem 1rem;
-  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -111,7 +110,7 @@
         gap: 1rem;
         padding: 2rem;
         margin-top: 4rem;
-        margin-bottom: 1rem;  }
+        margin-bottom: 1rem;}
   .s-left{
         align-items: center;
         text-align: center;
