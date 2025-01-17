@@ -1,8 +1,8 @@
 import React from 'react';
 import './Services.css';
-import HeartEmoji from '../../img/heartemoji.png';
-import Glasses from '../../img/glasses.png';
-import Humble from '../../img/humble.png';
+import Backend from '../../img/backend.png';
+import Frontend from '../../img/frontend.png';
+import UiUx from '../../img/uiUx.png';
 import Card from '../Card/Card';
 import Resume from './resume.pdf';
 import {useState, useContext } from 'react';
@@ -60,7 +60,7 @@ function Services() {
             transition={transition}
             style={{left:'14rem'}}>
                 <Card
-               emoji= {HeartEmoji}
+               emoji= {Backend}
                 heading="Backend Development"
                 detail={"Node.js, Express.js,  REST APIs, MongoDB, SQL, PHP"}
                 />
@@ -71,7 +71,7 @@ function Services() {
             transition={transition} 
             style={{top:"12rem", left:'-5rem'}}>
                 <Card
-                emoji= {Glasses}
+                emoji= {Frontend}
                 heading="Frontend Development"
                 detail={"HTML5, CSS3, JavaScript, TypeScript, React.js, Tailwind CSS, Bootstrap"}
                 />
@@ -82,7 +82,7 @@ function Services() {
              transition={transition}
              style={{top:"19rem", left:'12rem'}}>
                 <Card
-                emoji= {Humble}
+                emoji= {UiUx}
                 heading="Web Design"
                 detail={"Figma, Excalidraw, Prototyping"}
                 />

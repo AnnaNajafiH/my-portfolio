@@ -5,14 +5,15 @@ import Linkedin from '../../img/linkedin.png';
 import Vector1 from '../../img/Vector1.png';
 import Vector2 from '../../img/Vector2.png';
 import Anna from '../../img/anna.jpg';
-import Crown from '../../img/crown.png';
-import Thumbup from '../../img/thumbup.png';
+import Backend from '../../img/backend.png';
+import Frontend from '../../img/frontend.png';
 import Glassesimoji from '../../img/glassesimoji.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import {motion} from 'framer-motion';   // npm i framer-motion: for animation
 import {Link} from 'react-scroll';
+import { style } from 'framer-motion/client';
 
 
 
@@ -65,7 +66,7 @@ const transition = {duration: 2, type:'spring'};
                 style={{top:'3%', left:'68%' }}
                 className='floating-div'
                 >
-                <FloatingDiv image={Crown} txt1='Backend' txt2='Developer'/>
+                <FloatingDiv image={Backend} txt1='Backend' txt2='Developer'/>
                 </motion.div>
 
                 <motion.div
@@ -75,7 +76,7 @@ const transition = {duration: 2, type:'spring'};
                 style={{top:'23rem', left:'1rem' }}
                 className='floating-div'
                 >
-                    <FloatingDiv image={Thumbup} txt1='Frontend' txt2='Developer'/>
+                    <FloatingDiv image={Frontend} txt1='Frontend' txt2='Developer' />
                 </motion.div>
                 {/* blur divs */}
                 <div className="blur" style={{background:'var(purple)'}}>
