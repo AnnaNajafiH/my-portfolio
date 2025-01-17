@@ -29,13 +29,13 @@
 }
 
 .i-name>:nth-child(3){
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 100;
     color: var(--gray);
     margin-top: 1rem;
 }
 .i-name>:nth-child(4){
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 100;
     color: var(--gray);
     margin-top: 0.7rem;
@@ -162,7 +162,7 @@
   }
    .i-name > :nth-child(3),
   .i-name > :nth-child(4) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .i-button-mobile {

@@ -58,15 +58,11 @@
 }
 
 .hamburger div {
-    background-color: var(--black);
     height: 3px;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
 }
-/* Dark Mode Hamburger */
-.dark-mode .hamburger div {
-    background-color: white;
-}
+
 
 /* Active menu item stays orange */
 .active-link {
@@ -76,6 +72,9 @@
 
 /* Menu for small screens */
 @media screen and (max-width: 480px) {
+    .n-wrapper {
+    padding: 0 2rem 0 2rem;
+}
     .n-list {
         display: none;
         position: absolute;
@@ -106,16 +105,6 @@
     .hamburger {
         display: flex;
     }
-  
-    /* Light Mode Hamburger */
-.hamburger-light div {
-  background-color: black;
-}
-
-/* Dark Mode Hamburger */
-.hamburger-dark div {
-  background-color: white;
-}
 
 
     .n-button{

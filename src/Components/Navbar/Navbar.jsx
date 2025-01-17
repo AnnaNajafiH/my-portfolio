@@ -2,10 +2,14 @@ import React, {useState} from 'react';
 import './Navbar.css';
 import Toggle from '../Toggle/Toggle';
 import {Link} from 'react-scroll';
+import { useContext } from 'react';
+import { themeContext } from '../../Context/Context';
 
 
 function Navbar() {
-     
+const theme = useContext(themeContext);
+const darkMode = theme.state.darkMode;
+
 const [menuOpen, setMenuOpen] = useState(false);
 const toggleMenu = () => {setMenuOpen(!menuOpen);};
 const [activeItem, setActiveItem] = useState('Home'); // Track active menu item
@@ -54,10 +58,10 @@ const [activeItem, setActiveItem] = useState('Home'); // Track active menu item
                     </Link>
                 </ul>
             </div>
-                    <div className="hamburger" onClick={toggleMenu}>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="hamburger" onClick={toggleMenu}>
+          <div style={{ backgroundColor: darkMode ? 'white' : 'var(--black)' }}></div>
+          <div style={{ backgroundColor: darkMode ? 'white' : 'var(--black)' }}></div>
+          <div style={{ backgroundColor: darkMode ? 'white' : 'var(--black)' }}></div>
         </div>
              <Link spy={true} smooth={true} to='Contact' >
             <button className="button n-button">

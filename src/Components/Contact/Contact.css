@@ -4,11 +4,34 @@
     height: 50vh;
     margin-top: 8rem;
 }
-.w-left{
+.c-left{
     display: flex;
     flex: 1;
     flex-direction: column;
     position: relative;
+}
+
+.c-name{
+    display: flex;
+    flex-direction: column;
+}
+.c-name>:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.c-name>:nth-child(2){
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.c-name>:nth-child(3){
+    font-size: 17px;
+    font-weight: 100;
+    color: var(--gray);
+    margin-top: 1rem;
 }
 
 
@@ -27,7 +50,7 @@
 }
 
 .c-right .user{
-    width: 20rem;
+    width: 25rem;
     height: 2rem;
     padding: 0.3em;
     outline: none;
@@ -45,16 +68,29 @@ textarea{
     left: 8rem;
 }
 
+.c-button{
+    width: 8rem;
+
+}
+
 @media screen and (max-width: 480px) {
 
     .contact-form{
         flex-direction: column;
         height: 100vh;
         margin-bottom: 6rem;
+        margin-top: 0;
     }
-    .w-left{
-        margin-top: 2rem;
+
+    .c-left{
+        flex: 0.1rem;
         margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .c-right{
+        flex: 1.3rem;
     }
     .c-right .user{
         width: 15rem;
@@ -63,13 +99,11 @@ textarea{
     width: 9rem !important;
     height: 2rem !important;
   }
-  /* .awesome>:nth-child(1),
-  .awesome>:nth-child(2){
-    color: var(--black);
-    font-size: 2.5rem; 
-}
-
-.awesome>:nth-child(3){
-    font-size: 12px;
-} */
+  .c-name > :nth-child(1),
+  .c-name > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+   .c-name > :nth-child(3){
+    font-size: 14px;
+  }
 }

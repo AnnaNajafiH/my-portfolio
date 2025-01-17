@@ -35,11 +35,11 @@ function Contact() {
 
   return (
         <div className="contact-form" id='Contact'>
-        <div className="w-left">
-            <div className="awesome">
-                <span style={{color:darkMode?'white': ''}}>Get in touch</span>
-                <span>Contact</span>
-                <span>Got an idea in mind? Let’s connect and make it happen!</span>
+        <div className="c-left">
+            <div className="c-name">
+                <span style={{color:darkMode?'white': ''}}>Let's Connect</span>
+                <span>Bring Your Ideas to Life</span>
+                <span>Have a vision in mind? Reach out and let’s turn it into reality!</span>
             </div>
             <div className="blur s-blur1" style={{background: '#ABF1FF94'}} ></div>
         </div>
