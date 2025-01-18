@@ -15,7 +15,6 @@
 .t-heading{
     align-items: center;
     display: flex;
-    gap: 1rem;
     flex-direction: column;
 }
 .t-heading>*{
@@ -26,6 +25,7 @@
 
 .t-heading span:nth-child(2){
     color: var(--orange);
+    padding-bottom: 1rem;
 }
 .t-heading span:nth-child(3){
     color: var(--gray);
@@ -119,7 +119,7 @@
         height: 10rem;
     }
     .project .project-link {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
     padding: 0.5rem 1rem;
