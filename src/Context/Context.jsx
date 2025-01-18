@@ -6,7 +6,7 @@ export const themeContext = createContext();
 
 // Get the initial theme state from localStorage or fallback to default
 const initialState = {
-  darkMode: JSON.parse(localStorage.getItem('darkMode')) ?? true, // Default to true if not set
+  darkMode: JSON.parse(localStorage.getItem('darkMode')) ?? false, // Default to true if not set
 };
 
 // Reducer function to handle actions
