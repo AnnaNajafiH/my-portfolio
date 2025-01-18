@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import profilePic1 from '../../img/profile1.jpg';
+import profilePic1 from '../../img/booklook1.png';
 import profilePic2 from '../../img/profile2.jpg';
 import profilePic3 from '../../img/profile3.jpg';
 import { Pagination } from 'swiper/modules';
@@ -14,7 +14,7 @@ function Projects() {
       id: 1,
       title: 'Project 1',
       image: profilePic1,
-      link: 'https://github.com/', 
+      link: 'https://booklook24-1.onrender.com', 
     },
     {
       id: 2,
@@ -33,8 +33,8 @@ function Projects() {
   return (
     <div className="t-wrapper" id='Projects'>
         <div className="t-heading">
-            <span>Portfolio</span>
-            <span>Swipe to See My Projects</span>
+            <span>Swipe</span>
+            <span> to See My Projects</span>
             <span>Explore the details by clicking the link.</span>
         
         <div className="blur t-blur1" style={{background:'var(--purple)'}}></div>
@@ -53,7 +53,7 @@ function Projects() {
                     <SwiperSlide key={project.id}>
                         <div className="project">
                             <img src={project.image} alt="profile" />
-                            <a href="project.link" className='project-link'><span>Click here to see Project</span></a>
+                            <a href={project.link} className='project-link'><span>Click here to see Project</span></a>
                         </div>
                     </SwiperSlide>
                 )

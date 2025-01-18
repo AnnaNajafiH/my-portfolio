@@ -60,9 +60,9 @@
 
 .project img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
-    filter: blur(3px); /* Blurring the image */
+    filter: blur(1.8px); /* Blurring the image */
     margin-bottom: 1rem;
 }
 
@@ -72,8 +72,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: bol;
     text-decoration: none;
     padding: 0.5rem 1rem;
     background: var(--orange);
