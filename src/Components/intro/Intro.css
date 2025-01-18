@@ -204,8 +204,8 @@
 /* imoji */
 .i-right>:nth-child(4){
     transform: scale(0.5);
-    left: 25rem;
-    top: -20%;
+    left: -8rem;
+    top: -5rem;
 }
 }
 
