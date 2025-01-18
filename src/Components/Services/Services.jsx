@@ -2,7 +2,7 @@ import React from 'react';
 import './Services.css';
 import Backend from '../../img/backend.png';
 import Frontend from '../../img/frontend.png';
-import UiUx from '../../img/uiUX.png';
+import UiUx from '../../img/uiUx (2).png';
 import Card from '../Card/Card';
 import Resume from './resume.pdf';
 import {useState, useContext } from 'react';

@@ -10,8 +10,8 @@ function FloatingDiv({image, txt1, txt2}) {
     src={image} 
     alt="icon" 
     style={{
-    width: '100px', 
-    height: '100px', 
+    width: '90px', 
+    height: '90px', 
     borderRadius: '50%' 
   }} 
 />

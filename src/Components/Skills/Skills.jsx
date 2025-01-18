@@ -1,5 +1,5 @@
 import React from 'react';
-import './Works.css';
+import './Skills.css';
 import { useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import { motion } from 'framer-motion';
@@ -17,7 +17,7 @@ import TailwindLogo from '../../img/tailwind.png';
 import BootstrapLogo from '../../img/bootstrap.png';
 import GitLogo from '../../img/git.png';
 
-function Works() {
+function Skills() {
   const transition = { duration: 3.5, type: 'spring' }; // Animation
 
   const theme = useContext(themeContext);
@@ -53,6 +53,8 @@ function Works() {
         <button className="button s-button">Hire Me</button>
 
         <div className="blur w-blur1" style={{ background: '#ABF1FF94' }}></div>
+        <div className="blur w-blur2" style={{ background: "var(--purple" }}></div>
+
       </div>
       {/* right side */}
       <div className="w-right">
@@ -72,13 +74,13 @@ function Works() {
 
         {/* background circle */}
         {/* <div className="w-backCircle blueCircle"></div> */}
-        <div className="w-backCircle yellowCircle"></div>
+        {/* <div className="w-backCircle yellowCircle"></div> */}
       </div>
     </div>
   );
 }
 
-export default Works;
+export default Skills;
 
 
 

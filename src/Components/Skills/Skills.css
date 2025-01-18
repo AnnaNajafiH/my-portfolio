@@ -107,6 +107,15 @@
     top:5.8rem;
 }
 
+.w-blur1 {
+    top:1rem;
+    left: 49rem;
+}
+.w-blur2 {
+    top:15rem;
+    left: 22rem;
+}
+
 
 .w-secCircle{
     height: 60px;
@@ -117,7 +126,7 @@
     align-items: center;
     justify-content: center;
     box-shadow: var(--smboxShadow);
-    background: white;
+    background: transparent;
     margin: 10px; 
     overflow: hidden; 
 }
@@ -214,6 +223,15 @@
 .yellowCircle{
     left: 3rem;
     top: 4.7rem;
+}
+
+.w-blur1 {
+    top:1rem;
+    left: 8rem;
+}
+.w-blur2 {
+    top:22rem;
+    left: -6rem;
 }
 }
 
