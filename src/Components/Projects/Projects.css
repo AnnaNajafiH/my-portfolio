@@ -73,14 +73,22 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
     padding: 0.5rem 1rem;
     background: var(--orange);
     border-radius: 10px;
     transition: background 0.3s ease;
+    width: 200px;               
+    text-overflow: ellipsis;    /* Dots for overflow */
+    white-space: nowrap;        /* Prevents wrapping */
+    overflow: hidden;           /* Hides overflow */
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
 }
+
 
 .project .project-link:hover {
     background: #1a89e2;
@@ -125,12 +133,14 @@
     }
     .project .project-link {
     font-size: 0.6rem;
+    width: 150px;
     font-weight: 400;
     text-decoration: none;
     padding: 0.5rem 1rem;
     background: var(--orange);
     border-radius: 10px;
     transition: background 0.3s ease;
+
 }
     .project img{
         width: 100%;

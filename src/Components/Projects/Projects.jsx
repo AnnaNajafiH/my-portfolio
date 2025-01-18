@@ -63,7 +63,7 @@ function Projects() {
           0: {
             direction: 'vertical',
             slidesPerView: 2,
-            spaceBetween: 5,
+            spaceBetween: 30,
           },
           768: {
             direction: 'horizontal',
@@ -82,7 +82,7 @@ function Projects() {
                     <SwiperSlide key={project.id}>
                         <div className="project">
                             <img src={project.image} alt={project.title} />
-                            <a href={project.link} className='project-link' target='_blank' rel="noopener noreferrer"><span>Click here to see Project "{project.title}" </span></a>
+                            <a href={project.link} className='project-link' target='_blank' rel="noopener noreferrer"><span>Go to {project.title} 🔗 </span></a>
                             
                         </div>
                     </SwiperSlide>
