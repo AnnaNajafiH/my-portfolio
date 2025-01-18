@@ -8,6 +8,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
 
+
 function Projects() {
   const projects = [
     {
@@ -57,15 +58,31 @@ function Projects() {
           {/* slider */}
         <Swiper
         modules={[Pagination]}
-        slidesPerView={2}
         pagination={{ clickable: true }}
+        breakpoints={{
+          0: {
+            direction: 'vertical',
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          768: {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        }}
         >
             {projects.map((project)=>{
                 return (
                     <SwiperSlide key={project.id}>
                         <div className="project">
-                            <img src={project.image} alt="profile" />
-                            <a href={project.link} className='project-link'><span>Click here to see Project "{project.title}" </span></a>
+                            <img src={project.image} alt={project.title} />
+                            <a href={project.link} className='project-link' target='_blank' rel="noopener noreferrer"><span>Click here to see Project "{project.title}" </span></a>
                             
                         </div>
                     </SwiperSlide>
