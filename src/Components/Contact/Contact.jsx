@@ -73,8 +73,8 @@ function Contact() {
     <div className="contact-form" id='Contact'>
       <div className="c-left">
         <div className="c-name">
-          <span style={{ color: darkMode ? 'white' : '' }}>Let's Connect</span>
-          <span>Bring Your Ideas to Life</span>
+          <span style={{ color: darkMode ? 'white' : '' }}>Let's</span>
+          <span>Connect</span>
           <span>Have a vision in mind? Reach out and let’s turn it into reality!</span>
         </div>
         <div className="blur s-blur1" style={{ background: '#ABF1FF94' }}></div>
