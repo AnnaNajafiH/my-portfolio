@@ -7,7 +7,7 @@ import Vector2 from '../../img/Vector2.png';
 import Anna from '../../img/anna.jpg';
 import Backend from '../../img/backend.png';
 import Frontend from '../../img/frontend.png';
-import Glassesimoji from '../../img/glassesimoji.png';
+import Glassesimoji from '../../img/glasses.png';
 import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { useContext } from 'react';
 import { themeContext } from '../../Context/Context';

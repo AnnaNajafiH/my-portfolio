@@ -8,6 +8,7 @@ import Resume from './resume.pdf';
 import {useState, useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import {motion} from 'framer-motion';   
+import emailjs from '@emailjs/browser';
 
 function Services() {
     const transition = {duration: 1, type:'spring'}; //animation
@@ -16,7 +17,21 @@ function Services() {
 
     const [showConfirm, setShowConfirm] = useState(false);
 
+    //function to send Email when cv is downloaded
+    const notifyDownload = () => {
+      emailjs.send(
+        'service_trm8m12 ',    //service id
+         'template_ydvj978',   //template id
+          {message: 'Someone just downloaded your resume'},
+          '_ugCumI5WCnnMM8oy'   //public key
+      ).then(
+            (result) => console.log('Download notification sent:', result.text),
+            (error) => console.error('Error sending notification:', error.text)
+      )
+    };
+    //handle cv download + Email notification
     const handleDownload = () => {
+    notifyDownload(); // Send email notification
     const link = document.createElement('a');
     link.href = Resume;
     link.download = 'Resume.pdf';
@@ -25,7 +40,7 @@ function Services() {
   };
 
     return (
-    <div className="services" id='Services'>  {/* //id='Services' is used to scroll to this section */}
+    <div className="services" id='Services'>  
     
         {/* left side */}
         <div className='s-left'>
@@ -36,8 +51,8 @@ function Services() {
                 
 
                 <button className="button s-button" onClick={() => setShowConfirm(!showConfirm)}>
-            Download CV
-          </button>
+                   Download CV
+                </button>
                     {/* Custom Confirmation Box */}
           {showConfirm && (
             <div className="confirm-box">

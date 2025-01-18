@@ -28,6 +28,18 @@ function Projects() {
       image: profilePic3, 
       link: 'https://github.com/', 
     },
+    {
+      id: 3,
+      title: 'Project 3',
+      image: profilePic3, 
+      link: 'https://github.com/', 
+    },
+    {
+      id: 3,
+      title: 'Project 3',
+      image: profilePic3, 
+      link: 'https://github.com/', 
+    },
     
   ];
   return (
