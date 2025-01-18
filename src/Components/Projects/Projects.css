@@ -161,7 +161,9 @@
     height: 15rem;
   }
 
-  .swiper {
-    height: 60vh;
-  }
+  .t-wrapper{
+   height: 100vh;
+    
+}
+
 }
