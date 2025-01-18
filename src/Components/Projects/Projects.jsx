@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/booklook1.png';
-import profilePic2 from '../../img/profile2.jpg';
+import profilePic2 from '../../img/easyShop1.png';
 import profilePic3 from '../../img/profile3.jpg';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
@@ -12,13 +12,13 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
+      title: 'BookLook',
       image: profilePic1,
       link: 'https://booklook24-1.onrender.com', 
     },
     {
       id: 2,
-      title: 'Project 2',
+      title: 'EasyShop',
       image: profilePic2, 
       link: 'https://github.com/',
     },
@@ -57,7 +57,7 @@ function Projects() {
           {/* slider */}
         <Swiper
         modules={[Pagination]}
-        slidesPerView={1}
+        slidesPerView={2}
         pagination={{ clickable: true }}
         >
             {projects.map((project)=>{
@@ -65,7 +65,8 @@ function Projects() {
                     <SwiperSlide key={project.id}>
                         <div className="project">
                             <img src={project.image} alt="profile" />
-                            <a href={project.link} className='project-link'><span>Click here to see Project</span></a>
+                            <a href={project.link} className='project-link'><span>Click here to see Project "{project.title}" </span></a>
+                            
                         </div>
                     </SwiperSlide>
                 )
