@@ -21,7 +21,7 @@ function Projects() {
       id: 2,
       title: 'EasyShop',
       image: profilePic2, 
-      link: 'https://github.com/',
+      link: 'https://easyshop-y1eg.onrender.com',
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ function Projects() {
         breakpoints={{
           0: {
             direction: 'vertical',
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
