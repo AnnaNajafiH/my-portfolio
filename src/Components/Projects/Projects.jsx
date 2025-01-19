@@ -1,42 +1,57 @@
-import React from 'react';
+import React, {useState}from 'react';
 import './Projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/booklook1.png';
 import profilePic2 from '../../img/easyShop1.png';
 import profilePic3 from '../../img/profile3.jpg';
 import { Pagination } from 'swiper/modules';
+import { FaGithub, FaInfoCircle } from 'react-icons/fa';  
 import 'swiper/css/pagination';
 import 'swiper/css';
 
 
 function Projects() {
+  const [showTechPopup, setShowTechPopup] = useState(false);
+  const [currentTech, setCurrentTech] = useState([]);
+
   const projects = [
     {
       id: 1,
-      title: 'BookLook',
+      title: 'Book_look',
       image: profilePic1,
       link: 'https://booklook24-1.onrender.com', 
+      technologies: ['TypeScript','React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+
     },
     {
       id: 2,
-      title: 'EasyShop',
+      title: 'ecommerce',
       image: profilePic2, 
       link: 'https://easyshop-y1eg.onrender.com',
+      technologies: ['TypeScript','React', 'Express', 'MongoDB', 'Bootstrap', 'CSS' , 'Paypal'],
+
     },
     {
       id: 3,
       title: 'Project 3',
       image: profilePic3, 
       link: 'https://github.com/', 
-    },
-    {
-      id: 3,
-      title: 'Project 3',
-      image: profilePic3, 
-      link: 'https://github.com/', 
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+
     },
     
   ];
+
+const handleTechClick = (technologies)=>{
+  setCurrentTech (technologies);
+  setShowTechPopup(true)
+};
+
+const closeTechPopup = ()=> {
+  setShowTechPopup(false);
+  setCurrentTech([])
+}
+
   return (
     <div className="t-wrapper" id='Projects'>
         <div className="t-heading">
@@ -76,13 +91,41 @@ function Projects() {
                     <SwiperSlide key={project.id}>
                         <div className="project">
                             <img src={project.image} alt={project.title} />
-                            <a href={project.link} className='project-link' target='_blank' rel="noopener noreferrer"><span>Go to {project.title} 🔗 </span></a>
+                            <a href={project.link} className='project-link' target='_blank' rel="noopener noreferrer"><span>Go to {project.title} 🔗 </span>
+                            </a>
+
+                    {/* Icons for GitHub and Tech Info */}
+                    <div className="project-icons">
+                        <a href={`https://github.com/AnnaNajafiH/${project.title}`} target="_blank" rel="noopener noreferrer">
+                        <FaGithub size={24} />
+                        </a>
+                        <FaInfoCircle
+                        className='info-icon'
+                         size={24}
+                         onClick={() => handleTechClick(project.technologies)}
+                        style={{ cursor: 'pointer' }}
+                        />
+                        </div>
                             
                         </div>
                     </SwiperSlide>
                 )
             })}
         </Swiper>
+         {/* Popup for Technologies */}
+      {showTechPopup && (
+        <div className="tech-popup">
+          <div className="popup-content">
+            <h2>Technologies Used</h2>
+            <ul>
+              {currentTech.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
+            </ul>
+            <button onClick={closeTechPopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
