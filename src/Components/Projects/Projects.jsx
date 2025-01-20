@@ -101,7 +101,7 @@ const closeTechPopup = ()=> {
                         </a>
                         <FaInfoCircle
                         className='info-icon'
-                         size={24}
+                         size={25}
                          onClick={() => handleTechClick(project.technologies)}
                         style={{ cursor: 'pointer' }}
                         />

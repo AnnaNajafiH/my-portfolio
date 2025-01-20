@@ -50,7 +50,7 @@ function Skills() {
           <br />
         </span>
 
-        <button className="button s-button">Hire Me</button>
+        {/* <button className="button s-button">Hire Me</button> */}
 
         <div className="blur w-blur1" style={{ background: '#ABF1FF94' }}></div>
         <div className="blur w-blur2" style={{ background: "var(--purple" }}></div>
