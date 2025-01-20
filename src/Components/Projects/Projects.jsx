@@ -3,7 +3,7 @@ import './Projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/booklook1.png';
 import profilePic2 from '../../img/easyShop1.png';
-import profilePic3 from '../../img/profile3.jpg';
+import profilePic3 from '../../img/pokemon1.png';
 import { Pagination } from 'swiper/modules';
 import { FaGithub, FaInfoCircle } from 'react-icons/fa';  
 import 'swiper/css/pagination';
@@ -25,7 +25,7 @@ function Projects() {
     },
     {
       id: 2,
-      title: 'ecommerce',
+      title: 'EasyShop',
       image: profilePic2, 
       link: 'https://easyshop-y1eg.onrender.com',
       technologies: ['TypeScript','React', 'Express', 'MongoDB', 'Bootstrap', 'CSS' , 'Paypal'],
@@ -33,10 +33,10 @@ function Projects() {
     },
     {
       id: 3,
-      title: 'Project 3',
+      title: ' Pokémon',
       image: profilePic3, 
-      link: 'https://github.com/', 
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://wd51-pokebattle.netlify.app/', 
+      technologies: ['JavaScript', 'React', 'Express', 'tailwind CSS' ],
 
     },
     
