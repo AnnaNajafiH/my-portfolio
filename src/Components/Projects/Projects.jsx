@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import profilePic1 from '../../img/booklook1.png';
 import profilePic2 from '../../img/easyShop1.png';
 import profilePic3 from '../../img/pokemon1.png';
+import profilePic4 from '../../img/onlineShop1.png';
 import { Pagination } from 'swiper/modules';
 import { FaGithub, FaInfoCircle } from 'react-icons/fa';  
 import 'swiper/css/pagination';
@@ -33,10 +34,18 @@ function Projects() {
     },
     {
       id: 3,
-      title: ' Pokémon',
+      title: 'Pokémon',
       image: profilePic3, 
       link: 'https://wd51-pokebattle.netlify.app/', 
       technologies: ['JavaScript', 'React', 'Express', 'tailwind CSS' ],
+
+    },
+    {
+      id: 4,
+      title: 'OnlineShop',
+      image: profilePic4, 
+      link: 'https://678e2fa2d34178108f710642--guileless-eclair-d028ca.netlify.app/', 
+      technologies: ['TypeScript', 'React', 'json-server', 'tailwind CSS' ],
 
     },
     
