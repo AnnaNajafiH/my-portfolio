@@ -44,7 +44,7 @@ function Projects() {
       id: 4,
       title: 'OnlineShop',
       image: profilePic4, 
-      link: 'https://678e2fa2d34178108f710642--guileless-eclair-d028ca.netlify.app/', 
+      link: 'https://guileless-eclair-d028ca.netlify.app/', 
       technologies: ['TypeScript', 'React', 'json-server', 'tailwind CSS' ],
 
     },
