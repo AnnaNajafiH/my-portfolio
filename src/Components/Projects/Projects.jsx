@@ -79,17 +79,17 @@ const closeTechPopup = ()=> {
         pagination={{ clickable: true }}
         breakpoints={{
           0: {
-            direction: 'vertical',
+            // direction: 'vertical',
             slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
-            direction: 'horizontal',
+            // direction: 'horizontal',
             slidesPerView: 2,
             spaceBetween: 30,
           },
           1024: {
-            direction: 'horizontal',
+            // direction: 'horizontal',
             slidesPerView: 2,
             spaceBetween: 40,
           },

@@ -21,7 +21,7 @@ function Achievements() {
       image: HachFestival,
       ort: 'Rosengarten, Mannheim, Germany',
       date: '6-8th September 2024',
-      explanation: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      explanation: 'Collaborated in a team of four to develop a prototype gamified app aimed at reducing workplace CO2 emissions, enabling employees to track and lower their individual carbon footprint through personalized challenges',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ function Achievements() {
       image: MentalHealth,
       ort: 'CityCube, Berlin, Germany',
       date: '28-29th November 2024',
-      explanation: ' DGPPN Congresslorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      explanation: ' Collaborated in a team of five to develop a prototype app aimed at increasing the acceptance of digital solutions in mental health care by addressing language barriers.',
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ function Achievements() {
       image: WBSCodingSchool,
       ort: 'WBS Coding School, Berlin, Germany',
       date: '10 April - 9 August 2024',
-      explanation: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      explanation: 'What i achieved in WBS Coding School: Developed responsive frontend systems and web applications using HTML5, CSS3, Tailwind, JavaScript React.js. Built backend systems with Node.js and Express.js, integrating secure JWT authentication. Managed databases with MongoDB and SQL. Utilized Git, GitHub for efficient development workflows. Developed RESTful APIs for seamless interaction between the frontend and backend. integrated websites using CMS platforms such as Contentful. Designed wireframes and prototypes using Figma and Excalidraw ensuring visually appealing and user-friendly interfaces',
     },
   ]
 
@@ -55,9 +55,11 @@ function Achievements() {
 
   return (
     <div className='achivement' id='Achievements'>
+
         {/* heading */}
         <span style={{color:darkMode?'white': ''}}>Achievements and </span>
         <span>Certificates</span>
+
 
         {/* slider */}
         <Swiper
@@ -91,6 +93,8 @@ function Achievements() {
           }
           )}
         </Swiper>
+        <div className="blur a-blur1" style={{background:'var(--purple)'}}></div>
+        <div className="blur a-blur2" style={{background:'skyblue'}}></div>
 
     </div>
   )
