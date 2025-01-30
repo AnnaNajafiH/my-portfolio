@@ -82,7 +82,7 @@
         right: 0.5rem;
         background-color: transparent;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        width: 13%;
+        width: 15%;
         flex-direction: column;
         padding: 0.5rem 1.3rem;
         margin: 0.3rem 1rem;
@@ -96,6 +96,7 @@
 
     .n-list ul li {
         text-align: center; 
+        font-size: 0.7rem;
     }
   
     .n-list.active {

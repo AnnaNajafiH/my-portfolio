@@ -12,6 +12,9 @@
     font-weight: bold;
     color: var(--black);
 }
+.achivement .swiper-pagination-bullet-active{
+    background: var(--orange);
+}
 
 .achivement span:nth-child(2) {
     font-size: 2.5rem;
@@ -68,6 +71,7 @@
   text-align: left;
   opacity: 1;
   overflow: auto;
+  text-align: justify;
 }
 
 .showInfo p {
