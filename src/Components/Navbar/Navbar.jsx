@@ -56,6 +56,9 @@ const [activeItem, setActiveItem] = useState('Home'); // Track active menu item
                     <Link spy={true} to='Projects' smooth={true} activeClass="activeClass">
                     <li onClick={toggleMenu}>Projects</li>
                     </Link>
+                    <Link spy={true} to='Achievements' smooth={true} activeClass="activeClass">
+                    <li onClick={toggleMenu}>Achievements</li>
+                    </Link>
                 </ul>
             </div>
           <div className="hamburger" onClick={toggleMenu}>

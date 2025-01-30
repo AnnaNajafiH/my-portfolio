@@ -4,7 +4,7 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Intro from './Components/intro/Intro'
 import Navbar from './Components/Navbar/Navbar';
-// import Portfolio from './Components/Portfolio/Portfolio';
+import Achievements from './Components/Achievements/Achievements';
 import Services from './Components/Services/Services';
 import Projects from './Components/Projects/Projects';
 import Skills from './Components/Skills/Skills';
@@ -27,8 +27,8 @@ function App() {
       <Services /> 
       {/* <Experience />    */}
       <Skills />
-      {/* <Portfolio />   */}
       <Projects />
+      <Achievements />  
       <Contact />
       <Footer />
     </div>

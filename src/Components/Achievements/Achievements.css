@@ -1,91 +1,80 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
+.achivement {
     display: flex;
-    height: 50vh;
-    margin-top: 8rem;
-}
-.c-left{
-    display: flex;
-    flex: 1;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    position: relative;
+    height: 100vh;
+    margin: 0rem auto 1rem auto;
 }
 
-.c-name{
-    display: flex;
-    flex-direction: column;
-}
-.c-name>:nth-child(1){
-    font-size: 3rem;
+.achivement span:nth-child(1) {
+    font-size: 2.5rem;
     font-weight: bold;
     color: var(--black);
 }
 
-.c-name>:nth-child(2){
+.achivement span:nth-child(2) {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--orange);
 }
 
-.c-name>:nth-child(3){
-    font-size: 17px;
-    font-weight: 100;
-    color: var(--gray);
+/* slider */
+.achivement .swiper{
+    overflow: visible!important;
+}
+
+.achivement-slider {
+    margin-top : 3rem;
+    width:100%;
+}
+
+.achivement-slider .swiper-slider {
+    width: 20rem;
+}
+.achivement img {
+    width: 18rem;
+    height: 23rem;
+    filter:drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+    border-radius: 19px;
+    margin-bottom: 2rem;
+}
+
+.swiper-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin-top: 1rem;
 }
 
-
-.c-right {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex: 1;
+.a-button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
 }
 
-.c-right> form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+.showInfo {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  margin-top: 7px;
+  width: 60%;
+  border-radius: 10px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out; 
+  font-size: 14px;
+  color: #333; 
+  text-align: left;
+  opacity: 1;
 }
 
-.c-right .user{
-    width: 25rem;
-    height: 2rem;
-    padding: 0.3em;
-    outline: none;
-    border: 2px solid var(--orange);
-    border-radius: 8px;
-    font-size: 16px;
+.showInfo p {
+  margin: 5px 0;
+  line-height: 1.6;
 }
 
-textarea{
-    height: 4rem !important ;
-}
 
-.c-blur {
-    top:1rem;
-    left: 8rem;
-}
 
-.c-button{
-    width: 8rem;
-
-}
-
-/* Red border for inputs with errors */
-.input-error {
-  border: 2px solid red;
-}
-
-/* Error message styling */
-.error-text {
-  color: red;
-  font-size: 0.8rem;
-  margin-top: -0.5rem;
-  margin-bottom: 0.5rem;
-  display: block;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -96,26 +85,25 @@ textarea{
 
     .achivement span:nth-child(1),
     .achivement span:nth-child(2) {
-        font-size: 2rem; 
+        font-size: 2rem;
         text-align: center;
     }
 
-  
+    /* Stack Swiper elements in a column */
     .swiper-elements {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 3rem;
     }
 
+    /* Adjust Swiper container */
     .achivement-slider {
         margin-top: 2rem;
-        width: 90%; 
+        width: 90%;
     }
 
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .achivement-slider .swiper-slide {
         width: 100%; 
     }
 
@@ -125,11 +113,13 @@ textarea{
         max-width: 300px; 
     }
 
+    /* Button spacing for better touch accessibility */
     .a-button {
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
 
+    /* Show info styling for better visibility */
     .showInfo {
         width: 90%; 
         padding: 10px;
@@ -160,7 +150,6 @@ textarea{
     .a-button {
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
-        margin-bottom: 1rem;
     }
 
     .showInfo {
