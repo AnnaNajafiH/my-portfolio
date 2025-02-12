@@ -21,7 +21,7 @@ function Projects() {
       title: 'Book_look',
       image: profilePic1,
       link: 'https://booklook24-1.onrender.com', 
-      technologies: ['TypeScript','React', 'Express', 'MongoDB', 'Tailwind CSS'],
+      technologies: ['JavaScript','React', 'Express', 'MongoDB', 'Tailwind CSS'],
 
     },
     {

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Sidebar from '../../img/sidebar.png';
 import HachFestival from '../../img/Hackfestival2024.jpg';
 import MentalHealth from '../../img/MentalHealth_Hackathon.jpg';
-import WBSCodingSchool from '../../img/WBSCodingSchool.jpg';
+import WBSCodingSchool from '../../img/certificate_Nahid_Najafi_Hajiwar.jpg';
 import {useState,  useContext } from 'react';
 import { themeContext } from '../../Context/Context';
 import 'swiper/css';
