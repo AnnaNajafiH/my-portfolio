@@ -28,7 +28,7 @@ function Projects() {
       id: 2,
       title: 'EasyShop',
       image: profilePic2, 
-      link: 'https://easyshop-y1eg.onrender.com',
+      link: 'https://easyshop-frontend-u9wj.onrender.com/',
       technologies: ['TypeScript','React', 'Express', 'MongoDB', 'Bootstrap', 'CSS' , 'Paypal'],
 
     },
